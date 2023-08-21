@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+const {nextui} = require("@nextui-org/react");
+
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}",
+  "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+],
   darkMode: "class",
   theme: {
     fontFamily: {
@@ -18,6 +22,7 @@ export default {
       rojo: "#EE2E31",
       snow: "#FFF9FB",
       azul: "#3F84E5",
+      fondo: "#e5e5e5",
       gray200: "#e5e7eb",
       gray300: "#d1d5db",
       gray600: "#4b5563",
@@ -25,13 +30,8 @@ export default {
       blue300: "#93c5fd",
       blue600: "#0284c7",
       blue900: "#1e3a8a",
+      
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
-
-// F4C095
-// 679289
-// EDAE49 amarillo
-// E7DFC6 perla
-// FFF9FB snow

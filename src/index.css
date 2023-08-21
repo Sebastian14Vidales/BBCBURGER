@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 body {
-    font-family: "Bree Serif", serif;
-    
+    @apply font-breeSerif dark:bg-oscuro dark:text-snow;
+}
+
+.contenidoPrincipal {
+    @media (min-width: 1536px) { 
+        height: 30rem;
+    }
+}
+
+h2 {
+    display: inline-block;
+    position: relative;
+}
+
+h2::after,h2::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: #EE2E31;
+    top: 0.6em;
+}
+
+h2::before {
+    left: -140px;
+}
+h2::after {
+    right: -140px;
 }

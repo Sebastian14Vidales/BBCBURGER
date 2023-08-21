@@ -10,9 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@nextui-org/button": "^2.0.11",
+    "@nextui-org/card": "^2.0.11",
+    "@nextui-org/react": "^2.0.24",
+    "@nextui-org/tooltip": "^2.0.13",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.14.2"
+    "react-router-dom": "^6.15.0",
+    "typed.js": "^2.0.16"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

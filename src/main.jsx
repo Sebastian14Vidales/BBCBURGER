@@ -1,25 +1,28 @@
-import React from 'react';
-import Index from './components/Index'
-import './index.css';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import ReactDOM from 'react-dom/client';
-import Layout from './components/Layout';
+import React from "react";
+import { NextUIProvider } from "@nextui-org/react";
+import Index from "./pages/Index";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import Layout from "./components/Layout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout/>,
+    element: <Layout />,
     children: [
       {
         index: true,
-        element: <Index/>
-      }
-    ]
-  }
-])
+        element: <Index />,
+      },
+    ],
+  },
+]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
-  </React.StrictMode>,
-)
+    <NextUIProvider>
+      <RouterProvider router={router} />
+    </NextUIProvider>
+  </React.StrictMode>
+);
