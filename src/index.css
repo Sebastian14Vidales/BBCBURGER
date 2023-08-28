@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body {
-    @apply font-breeSerif dark:bg-oscuro dark:text-snow;
+    @apply font-breeSerif dark:bg-oscuro dark:text-blanco;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .contenidoPrincipal {
@@ -16,6 +21,7 @@ h2 {
     display: inline-block;
     position: relative;
 }
+
 
 h2::after,h2::before {
     content: '';
@@ -32,3 +38,15 @@ h2::before {
 h2::after {
     right: -140px;
 }
+
+.redes {
+    filter: invert(100%);
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }

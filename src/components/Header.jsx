@@ -12,19 +12,19 @@ const Header = () => {
           </h1>
         </div>
         <nav
-          className="items-center gap-4 dark:text-snow
+          className="items-center dark:text-snow
            hidden md:flex"
         >
-          <a className="uppercase hover:text-blue-900" href="">
+          <a className="uppercase mr-4 hover:text-blue-900" href="">
             Home
           </a>
-          <a className="uppercase hover:text-blue-900" href="">
+          <a className="uppercase mr-4 hover:text-blue-900" href="#menu">
             Menú
           </a>
-          <a className="uppercase hover:text-blue-900" href="">
+          <a className="uppercase mr-4 hover:text-blue-900" href="">
             Servicios
           </a>
-          <a className="uppercase hover:text-blue-900" href="">
+          <a className="uppercase mr-4 hover:text-blue-900" href="">
             Ubicación
           </a>
           <a className="uppercase hover:text-blue-900" href="">

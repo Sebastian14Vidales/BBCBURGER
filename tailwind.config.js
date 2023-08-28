@@ -21,6 +21,7 @@ export default {
       perla: "#E7DFC6",
       rojo: "#EE2E31",
       snow: "#FFF9FB",
+      blanco: "#FFFF",
       azul: "#3F84E5",
       fondo: "#e5e5e5",
       gray200: "#e5e7eb",

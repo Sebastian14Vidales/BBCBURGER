@@ -1,9 +1,9 @@
 import React from "react";
 import Typed from "typed.js";
 import burger from "../../images/burger.png";
-import facebook from "../../images/facebook.svg";
-import instagram from "../../images/instagram.svg";
-import tiktok from "../../images/tiktok.svg";
+import facebook from "../../images/facebook.png";
+import instagram from "../../images/instagram.png";
+import tiktok from "../../images/tiktok.png";
 import { Button, Tooltip } from "@nextui-org/react";
 
 function IndexContent() {
@@ -36,8 +36,8 @@ function IndexContent() {
           d="M0,128L21.8,133.3C43.6,139,87,149,131,170.7C174.5,192,218,224,262,208C305.5,192,349,128,393,90.7C436.4,53,480,43,524,64C567.3,85,611,139,655,138.7C698.2,139,742,85,785,85.3C829.1,85,873,139,916,181.3C960,224,1004,256,1047,245.3C1090.9,235,1135,181,1178,176C1221.8,171,1265,213,1309,218.7C1352.7,224,1396,192,1418,176L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
         ></path>
       </svg>
-      <div className="relative contenidoPrincipal">
-        <div className="container 2xl:absolute -top-20 right-0 left-0 px-5 mx-auto grid grid-cols-1 gap-8 py-8 xl:pt-0 xl:px-28 sm:grid-cols-2">
+      <div className="relative dark:bg-oscuro contenidoPrincipal">
+        <div className="container 2xl:absolute -top-20 right-0 left-0 px-5 mx-auto grid grid-cols-1 gap-8 pt-8 xl:pt-0 xl:px-28 sm:grid-cols-2">
           <div className="flex flex-col justify-center">
             <h1 className="uppercase text-7xl font-breeSerif font-bold">
               Bbc burger
@@ -47,12 +47,12 @@ function IndexContent() {
               assumenda perferendis commodi maiores optio vero, at nemo
               consectetur debitis sunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             </p>
-            <p className="pt-8 text-2xl font-bold dark:text-snow">
-              <span className="font-breeSerif font-extrabold" ref={el}></span>
+            <p className="pt-8 text-2xl font-bold">
+              <span className="font-breeSerif font-extrabold text-lg md:text-normal" ref={el}></span>
             </p>
             <div className="w-full contents md:flex">
               <Button className="bg-rojo mt-10 text-snow uppercase">
-                Descubre nuestra magia
+                Descubre nuestra historia
               </Button>
             </div>
             <div className="mt-8">
@@ -68,7 +68,7 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img src={facebook} alt="Imagen Facebook" width="40px" height="40px"/>
+                    <img className="dark:invert" src={facebook} alt="Imagen Facebook" width="40px" height="40px"/>
                     </Tooltip>
                   </a>
                 </li>
@@ -83,7 +83,7 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img src={instagram} alt="Imagen Instagram" width="40px" height="40px"/>
+                    <img className="dark:invert" src={instagram} alt="Imagen Instagram" width="40px" height="40px"/>
                     </Tooltip>
                   </a>
                 </li>
@@ -98,7 +98,7 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img src={tiktok} alt="Imagen TikTok" width="30px" height="40px"/>
+                    <img className="dark:invert" src={tiktok} alt="Imagen TikTok" width="45px" height="40px"/>
                     </Tooltip>
                   </a>
                 </li>
