@@ -20,9 +20,9 @@ function Menu() {
 
   return (
     <div id="menu" className="bg-oscuro shadow-2xl">
-      <div className="container text-center mx-auto mt-10 px-5 xl:px-48 pb-20 pt-10 ">
+      <div className="container text-center mx-auto sm:mt-0 px-5 xl:px-48 pb-10 sm:pb-20 pt-10 ">
         <h2 className="uppercase text-xl sm:text-3xl text-blanco font-bold">
-          Nuestro Menú
+          🍽️ Nuestro Menú 🍽️
         </h2>
 
         <div className="grid gap-8 md:grid-cols-3 mt-12 text-snow">
@@ -32,7 +32,7 @@ function Menu() {
               className="dark:bg-oscuro dark:opacity-80 hover:scale-105 relative transition-all"
               shadow="lg"
               isPressable
-              onPress={() => console.log("item pressed")}
+              onPress={() => console.log("item pressed", producto.id)}
             >
               <CardBody className="relative overflow-visible p-0">
                 <Image
@@ -43,6 +43,7 @@ function Menu() {
                   src={
                     producto.attributes.imagen.data.attributes.formats.small.url
                   }
+                  loading="lazy"
                   alt={producto.attributes.nombre}
                 />
                 <div className="absolute inset-0 z-10 bg-oscuro opacity-50"></div>

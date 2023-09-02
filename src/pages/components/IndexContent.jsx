@@ -37,7 +37,7 @@ function IndexContent() {
         ></path>
       </svg>
       <div className="relative dark:bg-oscuro contenidoPrincipal">
-        <div className="container 2xl:absolute -top-20 right-0 left-0 px-5 mx-auto grid grid-cols-1 gap-8 pt-8 xl:pt-0 xl:px-28 sm:grid-cols-2">
+        <div className="container 2xl:absolute -top-20 right-0 left-0 px-5 mx-auto grid grid-cols-1 gap-8 py-8 xl:pt-0 xl:px-28 sm:grid-cols-2">
           <div className="flex flex-col justify-center">
             <h1 className="uppercase text-7xl font-breeSerif font-bold">
               Bbc burger
@@ -58,7 +58,7 @@ function IndexContent() {
             <div className="mt-8">
               <ul className="flex gap-4 items-center">
                 <li>
-                  <a href="">
+                  <a href="https://www.facebook.com/alejo.bbc99" target="_blank">
                     <Tooltip
                       showArrow
                       placement="bottom"
@@ -68,12 +68,12 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img className="dark:invert" src={facebook} alt="Imagen Facebook" width="40px" height="40px"/>
+                    <img className="dark:invert" src={facebook} alt="Imagen Facebook" width="40px" height="40px" loading="lazy"/>
                     </Tooltip>
                   </a>
                 </li>
                 <li>
-                <a href="">
+                <a href="https://www.instagram.com/bbc_burger/" target="_blank">
                     <Tooltip
                       showArrow
                       placement="bottom"
@@ -83,12 +83,12 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img className="dark:invert" src={instagram} alt="Imagen Instagram" width="40px" height="40px"/>
+                    <img className="dark:invert" src={instagram} alt="Imagen Instagram" width="40px" height="40px" loading="lazy"/>
                     </Tooltip>
                   </a>
                 </li>
                 <li>
-                <a href="">
+                <a href="https://www.tiktok.com/@bbc_burger?_t=8cCrUxQ72f8&_r=1" target="_blank">
                     <Tooltip
                       showArrow
                       placement="bottom"
@@ -98,7 +98,7 @@ function IndexContent() {
                         arrow: "bg-neutral-400 dark:bg-snow",
                       }}
                     >
-                    <img className="dark:invert" src={tiktok} alt="Imagen TikTok" width="45px" height="40px"/>
+                    <img className="dark:invert" src={tiktok} alt="Imagen TikTok" width="45px" height="40px" loading="lazy"/>
                     </Tooltip>
                   </a>
                 </li>
@@ -106,7 +106,7 @@ function IndexContent() {
             </div>
           </div>
           <div className="row-start-1 row-end-2">
-            <img className="mx-auto w-4/5" src={burger} alt="" />
+            <img className="mx-auto w-4/5" src={burger} alt="Bbc Burger" loading="lazy"/>
           </div>
         </div>
       </div>

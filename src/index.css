@@ -3,50 +3,77 @@
 @tailwind utilities;
 
 body {
-    @apply font-breeSerif dark:bg-oscuro dark:text-blanco;
-
+  @apply font-breeSerif dark:bg-oscuro dark:text-blanco;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .contenidoPrincipal {
-    @media (min-width: 1536px) { 
-        height: 30rem;
-    }
+  @media (min-width: 1536px) {
+    height: 30rem;
+  }
 }
 
 h2 {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
-
-h2::after,h2::before {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 3px;
-    background-color: #EE2E31;
-    top: 0.6em;
+h2::after,
+h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #ee2e31;
+  top: 0.6em;
 }
 
 h2::before {
-    left: -140px;
+  left: -140px;
 }
+
 h2::after {
-    right: -140px;
+  right: -140px;
 }
 
 .redes {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
-.centered-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+@media (max-width: 640px) { 
+    h2::after,h2::before {
+        width: 60px;       
+    }
+    h2::before {
+        left: -70px;
+    }
+    h2::after {
+        right: -70px;
+    }
+}
+
+/* .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 110px;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  height: 350px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+} */
